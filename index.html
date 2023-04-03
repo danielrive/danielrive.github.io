@@ -1,307 +1,265 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
-	<title>Risen - FREE Bootstrap 5 Resume/CV Template For Developers</title>
-	
-	<!-- Meta -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Profolio Bootstrap 5 Template">
-	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
-	<link rel="shortcut icon" href="favicon.ico"> 
-	
-	<!-- Google Fonts -->	
-	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-	
-	<!-- Bootstrpa Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-	
-	<!-- FontAwesome JS -->
+    <title>Bootstrap Portfolio/Resume Theme for Developers</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boootstrap Portfolio/Resume Theme for Developers">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    
+    <!-- FontAwesome JS -->
     <script defer src="assets/fontawesome/js/all.js"></script>
+    
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">  
+    
+    <!-- github calendar css -->
+    <link rel="stylesheet" href="assets/plugins/github-calendar/dist/github-calendar-responsive.css">
+    <!-- github activity css -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">  
+    <link rel="stylesheet" href="assets/plugins/github-activity/src/github-activity.css">
 
-	<!-- Theme CSS -->  
-	<link id="theme-style" rel="stylesheet" href="assets/css/risen.css">
-
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
 </head> 
 
-
 <body>
-	
-	<div class="container-fluid">
-			
-			<div class="main-content-wrapper">
-				<div class="container-fluid">
-					<div class="top-bar text-center position-relative">
-						<div class="top-bar-inner">
+    <!-- ******HEADER****** --> 
+    <header class="header">
+        <div class="container">     
+	        <div class="row align-items-center">
+			    <div class="col">         
+		            <img class="profile-image img-fluid float-start rounded-circle" src="assets/images/profile.png" alt="profile image" />
+		            <div class="profile-content">
+		                <h1 class="name">Daniel German Rivera</h1>
+		                <h2 class="desc">Cloud Engineer</h2>   
+		                <ul class="social list-inline">
+		                    <li class="list-inline-item"><a href="https://www.linkedin.com/in/danielrive/"><i class="fab fa-linkedin-in"></i></a></li>
+		                    <li class="list-inline-item"><a href="https://github.com/danielrive"><i class="fab fa-github-alt"></i></a></li>    
+		                </ul> 
+		            </div><!--//profile-->
+			    </div><!--//col-->
+	            <div class="col-12 col-md-auto">
+		            <div class="dark-mode-switch d-flex">
+						<div class="form-check form-switch mx-auto mx-md-0">
+							<input type="checkbox" class="form-check-input me-2" id="darkSwitch" />
+							<label class="custom-control-label" for="darkSwitch">Dark Mode</label>
+						</div>
+			        </div><!--//dark-mode-switch-->
+	                <a class="btn btn-cta-primary" href="https://www.linkedin.com/in/danielrive/" target="_blank"><i class="fas fa-paper-plane"></i> Contact Me</a>        
+	            </div><!--//col-->
+	        </div><!--//row-->         
+        </div><!--//container-->
+    </header><!--//header-->
+    
+    <div class="container sections-wrapper py-5">
+        <div class="row">
+            <div class="primary col-lg-8 col-12">
+                <section class="about section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">About Me</h2>
+                        <div class="content">
+                            <p> Engineer from the White city of Colombia(Popayan), Cloud engineer focused in AWS, AWS community builder since 2021. I have 5 years of experience working in the Tech industry as Cloud engineer, i have been in different projects where i have had the oportunity to build the the team solutions running in the cloud, from the infrastructure to the pipelines to deploy the app and infra. I have passed some AWS certifications and one for kubernetes. traveler and tech lover <code class=""></code>
+                         
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+    
+               <section class="latest section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Latest Blog Posts</h2>
+                        <div class="content">    
+                                               
+                            <div class="item featured text-center">
+                                
+                                <div class="featured-image has-ribbon">
+                                    <a href="https://dev.to/aws-builders/aws-event-bridge-and-lambda-to-copy-rds-snapshots-to-another-region-kl3" target="_blank">
+                                    <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/Copy-snapshots.png" alt="project name" />
+                                    </a>
+                                    <div class="ribbon">
+                                        <div class="text">New</div>
+                                    </div>
+                                </div>
+                                
+                                <h3 class="title mb-3"><a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">AWS Event-Bridge and Lambda to copy RDS snapshots to another Region</a></h3>
+                                    
+                                <div class="desc text-start">                                    
+                                    <p>In this post i show how to copy automated RDS snapshots to another region using AWS Event-Bridge and Lambda</p>
+                                </div><!--//desc-->         
+                                <a class="btn btn-cta-secondary" href="https://dev.to/aws-builders/aws-event-bridge-and-lambda-to-copy-rds-snapshots-to-another-region-kl3" target="_blank"><i class="fas fa-thumbs-up"></i> like</a>                 
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://dev.to/aws-builders/enabling-logs-and-alerting-in-eks-cluster-part-1-2gnb" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/duck-k8.jpg" alt="Enabling logs and alerting in EKS cluster Part-1" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://dev.to/aws-builders/enabling-logs-and-alerting-in-eks-cluster-part-1-2gnb" target="_blank">Part I : Enabling logs and alerting in EKS cluster </a></h3>
+                                    <p class="mb-2">In this post I will share my experience enabling and configuring logging in an EKS cluster, creating alerts to send a notification when a specific event appears in the logs.</p>
+                                    <p><a class="more-link" href="https://dev.to/aws-builders/enabling-logs-and-alerting-in-eks-cluster-part-1-2gnb" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://dev.to/aws-builders/enabling-logs-and-alerting-in-eks-cluster-part-2-log-insights-and-metric-filters-3ped" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/eks.jpg" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://dev.to/aws-builders/enabling-logs-and-alerting-in-eks-cluster-part-2-log-insights-and-metric-filters-3ped" target="_blank">Part II : Enabling logs and alerting in EKS cluster</a></h3>
+                                    <p class="mb-2">In this post I will share my experience enabling and configuring logging in an EKS cluster, creating alerts to send a notification when a specific event appears in the logs.</p>
+                                    <p><a class="more-link" href="https://dev.to/aws-builders/enabling-logs-and-alerting-in-eks-cluster-part-2-log-insights-and-metric-filters-3ped" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            <hr class="divider" />
+                             <div class="item row">
+                                <a class="col-md-4 col-12" href="https://dev.to/aws-builders/trusting-in-your-iac-terraform-compliance-4cch" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/terraform.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://dev.to/aws-builders/trusting-in-your-iac-terraform-compliance-4cch" target="_blank">Trusting in your IaC -Terraform-Compliance</a></h3>
+                                    <p class="mb-2">Infrastructure as Code has started to be an important part of our cloud journey, giving us the ability to automate deploys and replicate our infra in multiple environments and accounts. Using code to define our infra allow us to implement some practices from developers world, like testing, version control, etc.</p>
+                                    <p><a class="more-link" href="https://dev.to/aws-builders/trusting-in-your-iac-terraform-compliance-4cch" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+
+                            <hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://dev.to/aws-builders/sharing-secrets-to-ecs-in-an-aws-multi-account-architecture-5h1i" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/secrets.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://dev.to/aws-builders/sharing-secrets-to-ecs-in-an-aws-multi-account-architecture-5h1i" target="_blank">Sharing secrets to ECS in an AWS multi-account architecture</a></h3>
+                                    <p class="mb-2">In this post, We'll see the highlight steps on how to share secrets between AWS account using ECS Fargate that get the secrets stored in AWS Secret manager but in a different account. We'll use Terraform to build this.</p>
+                                    <p><a class="more-link" href="https://dev.to/aws-builders/sharing-secrets-to-ecs-in-an-aws-multi-account-architecture-5h1i" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->         
 							
-							<a class="btn btn-primary top-bar-cta" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/risen-free-bootstrap-5-dark-mode-resume-cv-template-for-developers/">Hire Me</a>
-					
-							<ul class="social-list list-inline mx-auto">
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-twitter fa-fw"></i></a></li>
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-github fa-fw"></i></a></li>
-								
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-linkedin-in fa-fw"></i></a></li>
-								
-								<li class="list-inline-item me-0 me-md-1 me-lg-2"><a href="#"><i class="fa-brands fa-stack-overflow fa-fw"></i></a></li>
-								
-							</ul><!--//social-list-->
-							
-						</div><!--//top-bar-inner-->
-						
-					</div><!--//top-bar-->
-			
-					<div class="resume-wrapper mx-auto rounded-2">
-						<div class="resume-header px-4 px-lg-5">
-							<div class="resume-profile-holder text-center">
-								<img class="resume-profile-pic rounded-circle" src="assets/images/profile.png" alt="image">
-								
-								<h2 class="resume-name text-uppercase">Daniel Lopez </h2>
-								<div class="resume-role-title text-uppercase">Senior App Developer</div>
-								<div class="resume-contact mt-4">
-									<ul class="resume-contact-list list-unstyled list-inline mb-0 justify-content-between">
-										<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-telephone-inbound me-2"></i> +123-4567890</li>
-										<li class="list-inline-item me-md-3 me-lg-5"><i class="resume-contact-icon bi bi-envelope me-2"></i> hello@yourwebsite.com</li>
-										<li class="list-inline-item me-lg-5"><i class="resume-contact-icon bi bi-globe me-2"></i> www.yourwebsite.com</li>
-									</ul>
-								</div><!--//resume-contact-->
-							</div><!--//profile-holder-->
-						</div><!--//resume-header-->
-						
-						<div class="resume-body p-4 p-lg-5">
-							<div class="row">
-								<div class="col-main col-12 col-lg-8 pe-lg-4">
-									<section class="resume-summary-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-2 py-lg-3"><i class="resume-section-heading-icon bi bi-person me-2"></i>About Me</h3>
-										<div class="resume-summary-desc">
-											Summarise your career profile here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-										</div>
-									</section><!--//resume-section-->
-									
-									<hr>
-									
-									<section class="resume-experience-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-briefcase me-2"></i>Work Experience</h3>
-										<div class="resume-timeline position-relative">
-										    <article class="resume-timeline-item position-relative pb-5">
-											    
-											    <div class="resume-timeline-item-header mb-2">
-												    
-												    <div class="resume-position-meta d-flex justify-content-between mb-1">
-													    <div class="resume-position-time">2023 - Present</div>
-													    <div class="resume-company-name">Google</div>
-												    </div>
-											        <h3 class="resume-position-title mb-1">Tech Lead</h3>
+							<hr class="divider" />
+                            <div class="item row">
+                                <a class="col-md-4 col-12" href="https://medium.com/@danielrivera846/replicating-an-s3-bucket-encrypted-with-kms-bd2e1ba1d165" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/bucket-aws.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://medium.com/@danielrivera846/replicating-an-s3-bucket-encrypted-with-kms-bd2e1ba1d165" target="_blank">Replicating an S3 bucket encrypted with KMS</a></h3>
+									</a></h3>
+                                    <p class="mb-2">Last week I created a replication rule to make a cross-region replication of the whole S3 bucket, this bucket was configured with Server-side Encryption with a master key stored in AWS KMS</p>
+                                    <p><a class="more-link" href="https://medium.com/@danielrivera846/replicating-an-s3-bucket-encrypted-with-kms-bd2e1ba1d165" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
 
-											    </div><!--//resume-timeline-item-header-->
-											    <div class="resume-timeline-item-desc">
-												 
-												   
-												    <ul class="resume-timeline-list">
-													    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean porta est diam, et blandit ipsum suscipit facilisis. Praesent nec semper eros. Aliquam quis turpis sed metus mollis luctus vitae rhoncus mi. </li>
-													    <li>Vivamus accumsan purus at urna tincidunt convallis. Sed nisi dolor, elementum eget tempus ac, blandit ac mi. Aliquam id tellus ut arcu luctus accumsan in at odio. </li>
-													    
-													    <li>Morbi condimentum, lorem in pharetra mollis, purus justo sollicitudin dolor, tristique vulputate mi odio sit amet ante.</li>
-													    <li>Blanditiis praesentium voluptatum deleniti atque corrupti.</li>
-												    </ul>
-												    
-											    </div><!--//resume-timeline-item-desc-->
-		
-										    </article><!--//resume-timeline-item-->
-								    
-										    <article class="resume-timeline-item position-relative pb-5">
+							<hr class="divider" />
+							<div class="item row">
+                                <a class="col-md-4 col-12" href="https://medium.com/globant/deploying-your-first-micro-service-in-aws-using-pulumi-4fbbf68150e6" target="_blank">
+                                <img class="img-fluid project-image rounded shadow-sm" src="assets/images/projects/pulumi.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-12">
+                                    <h3 class="title"><a href="https://medium.com/globant/deploying-your-first-micro-service-in-aws-using-pulumi-4fbbf68150e6" target="_blank">Deploying your first micro-service in AWS using Pulumi</a></h3>
+									</a></h3>
+                                    <p class="mb-2"> In this article, we are going to dive into a microservices architecture in which we will use Pulumi to deploy an ECS cluster to run a microservice built-in Python3.</p>
+                                    <p><a class="more-link" href="https://medium.com/globant/deploying-your-first-micro-service-in-aws-using-pulumi-4fbbf68150e6" target="_blank"><i class="fas fa-external-link-alt"></i>Find out more</a></p>
+                                </div><!--//desc-->                          
+                            </div><!--//item-->
+                            
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                
+                </section><!--//section-->
+                
+                    
+                </section><!--//section-->
 
-											    <div class="resume-timeline-item-header mb-2">
-												    
-												    <div class="resume-position-meta d-flex justify-content-between mb-1">
-													    <div class="resume-position-time">2019 - 2023</div>
-													    <div class="resume-company-name">Meta</div>
-												    </div>
-											        <h3 class="resume-position-title mb-1">Senior App Developer</h3>
-
-											    </div><!--//resume-timeline-item-header-->
-											    <div class="resume-timeline-item-desc">
-												    <ul class="resume-timeline-list">
-													    
-													    <li>Praesent nec semper eros. Aliquam quis turpis sed metus mollis luctus vitae rhoncus mi. At vero eos et accusamus et iusto odio dignissimos.</li>
-													    <li>Proin tempus eu arcu in semper. Quisque gravida, sem ut vehicula ultrices, diam est viverra odio, eget tristique tortor tortor sed neque.</li>
-													    <li>Suspendisse quis pharetra elit. Curabitur vitae cursus lacus, et bibendum magna. Donec in orci eu augue posuere mattis ut in turpis.</li>
-												    </ul>
-												    
-											    </div><!--//resume-timeline-item-desc-->
-		
-										    </article><!--//resume-timeline-item-->
-										    <article class="resume-timeline-item position-relative">
-
-											    <div class="resume-timeline-item-header mb-2">
-												    
-												    <div class="resume-position-meta d-flex justify-content-between mb-1">
-													    <div class="resume-position-time">2017 - 2019</div>
-													    <div class="resume-company-name">Coinbase</div>
-												    </div>
-											        <h3 class="resume-position-title mb-1">App Developer</h3>
-
-											    </div><!--//resume-timeline-item-header-->
-											    <div class="resume-timeline-item-desc">
-												    <ul class="resume-timeline-list">
-													    
-													    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-													    <li>Nulla velit dui, ultrices sit amet arcu eget, sodales lacinia lorem.</li>
-													    <li>Quisque semper nisi mauris, non ullamcorper nunc consectetur eget. </li>
-													   
-												    </ul>
-												    
-											    </div><!--//resume-timeline-item-desc-->
-		
-										    </article><!--//resume-timeline-item-->
-							            </div><!--//resume-timeline-->
-									</section><!--//resume-experience-section-->
-								</div><!--//col-8-->
-								<div class="col-12 col-lg-4 ps-lg-4">
-									
-									<section class="resume-skills-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-gear me-2"></i>Tech Stack</h3>
-										
-										<ul class="list-unstyled">
-								        <li class="mb-2">
-								            <div class="resume-skill-name">JavaScript</div>
-											<div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
-											  <div class="progress-bar resume-progress-bar" style="width: 98%"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name">ReactJS</div>
-								            <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-											  <div class="progress-bar resume-progress-bar" style="width: 95%"></div>
-											</div>
-									        
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name">Python</div>
-									        <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
-											  <div class="progress-bar resume-progress-bar" style="width: 92%"></div>
-											</div>
-								        </li>
-								        <li class="mb-2">
-								            <div class="resume-skill-name">MongoDB</div>
-									        <div class="progress resume-progress" role="progressbar" aria-label="Basic example" aria-valuenow="86" aria-valuemin="0" aria-valuemax="100">
-											  <div class="progress-bar resume-progress-bar" style="width: 86%"></div>
-											</div>
-								        </li>
-
-							        </ul>
-										
-									</section><!--//resume-section-->
-									
-									<hr>
-									
-									<section class="resume-skills-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-person-gear me-2"></i>Soft Skills</h3>
-										<ul class="list-inline">
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">Leadship</span></li>
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">Project Management</span></li>
-								            
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">DevOps</span></li>
-								            <li class="list-inline-item"><span class="badge resume-skill-badge">Public Speaking</span></li>
-								            
-								            				           
-							            </ul>
-									</section><!--//resume-section-->
-									
-									<hr>
-									
-									<section class="resume-projects-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-code-slash me-2"></i>Projects</h3>
-										<div class="item">
-											<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a href="#">Project lorem Ipsum</a></h4>
-											<div class="item-desc">
-												Project desc goes here aenean ut libero sit amet ante fermentum scelerisque non a leo.
-											</div>
-										</div><!--//item-->
-										<div class="item">
-											<h4 class="item-heading"><i class="item-icon bi bi-square-fill me-2"></i><a href="#">Volutpat App</a></h4>
-											<div class="item-desc">
-												You can link to your project Github page.
-											</div>
-										</div><!--//item-->
-									
-											
-									</section>
-									
-									<hr>
-									
-									<section class="resume-educate-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-book me-2"></i>Education</h3>
-										<ul class="list-unstyled">
-										    <li class="mb-2">
-										        <div class="resume-degree font-weight-bold">MSc in Computer Science</div>
-										        <div class="resume-degree-org">Oxford University</div>
-										        <div class="resume-degree-time">2016 - 2017</div>
-										    </li>
-										    <li>
-										        <div class="resume-degree font-weight-bold">BSc Maths and Physics</div>
-										        <div class="resume-degree-org">University of California, Berkeley</div>
-										        <div class="resume-degree-time">2012 - 2016</div>
-										    </li>
-									    </ul>
-									</section><!--//resume-section-->
-									
-									<hr>
-									
-									<section class="resume-lang-section resume-section">
-										<h3 class="resume-section-heading text-uppercase py-2 py-lg-3 py-3"><i class="resume-section-heading-icon bi bi-translate me-2"></i>Languages</h3>
-										 <ul class="list-unstyled resume-lang-list">
-										    <li class="mb-2">
-										        <div class="resume-lang-name">English</div>
-										        <div class="resume-level-indicator row gx-0 flex-nowrap">
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-half"></span></div>
-										        </div><!--//resume-level-indicator-->
-										    </li>
-										     <li class="mb-2">
-										        <div class="resume-lang-name">Spanish</div>
-										        <div class="resume-level-indicator row gx-0 flex-nowrap">
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-full"></span></div>
-											        <div class="col"><span class="item item-half"></span></div>
-											        <div class="col"><span class="item"></span></div>
-										        </div><!--//resume-level-indicator-->
-										    </li>
-										</ul>
-									</section>
-									
-									
-									
-								</div><!--//col-side-->
-							</div><!--//row-->
-					    </div><!--//resume-body-->
-				    </div><!--//resume-wrapper-->
-				</div><!--//container-fluid-->
-			</div><!--//main-content-wrapper-->
-		
-		
-		</div><!--//row-->
-	
-	</div><!--//container-->
-	
-	<footer class="footer text-center py-4">
-		<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
-		<small class="copyright">Designed with <span class="sr-only">love</span><i class="bi bi-heart-fill" style="color:#fe655c"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
-	</footer>
-
+                </section><!--//section-->
+            </div><!--//primary-->
+            <div class="secondary col-lg-4 col-12">
+                 <aside class="info aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading sr-only">Basic Information</h2>
+                        <div class="content">
+                            <ul class="list-unstyled">
+                                <li><i class="fas fa-link"></i><span class="sr-only">linkedin:</span><a href="#">https://www.linkedin.com/in/danielrive/</a></li>
+                            </ul>
+                        </div><!--//content-->  
+                    </div><!--//section-inner-->                 
+                </aside><!--//aside-->
+                
+                                
+                <aside class="education aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Education</h2>
+                        <div class="content">
+                            <div class="item">                      
+                                <h3 class="title"><i class="fas fa-graduation-cap"></i> Electronic and Telecommunicacions engineer</h3>
+                                <h4 class="university">Universidad del Cauca </h4>
+                            </div><!--//item-->
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+                            
+                <aside class="credits aside section">
+                    <div class="section-inner shadow-sm rounded">
+                        <h2 class="heading">Credits</h2>
+                        <div class="content">
+                            <ul class="list-unstyled pb-2">
+                                <li><a href="https://getbootstrap.com/" target="_blank"><i class="fas fa-external-link-alt"></i>Bootstrap</a></li>
+                                <li><a href="https://fortawesome.github.io/Font-Awesome/" target="_blank"><i class="fas fa-external-link-alt"></i>FontAwesome</a></li>
+                                <li><a href="https://github.com/IonicaBizau/github-calendar" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Calendar Plugin</a></li>
+                                
+                                <li><a href="https://caseyscarborough.com/projects/github-activity/" target="_blank"><i class="fas fa-external-link-alt"></i>GitHub Activity Stream</a></li>
+                                
+                                <li><a href="https://github.com/sdepold/vanilla-rss" target="_blank"><i class="fas fa-external-link-alt"></i>Vanilla RSS</a></li>
+                                <li><a href="https://github.com/coliff/dark-mode-switch"><i class="fas fa-external-link-alt"></i>Dark Mode Switch</a></li>
+                                
+                            </ul>
+                            
+                            <hr/>
+                            
+                             <p class="pt-2">This Boootstrap portfolio template is handcrafted by UX designer <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying Riley</a> at <a href="https://themes.3rdwavemedia.com/" target="_blank">3rd Wave Media</a> for developers and is <strong>FREE</strong> as long as you keep the footer attribution link.</p>
+                             <p>If you’d like to <strong>use this template without the attribution link</strong>, you can <a href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-portfolio-theme-for-web-developers/" target="_blank">buy the commercial license</a>.</p>
+                             
+                             <a class="btn btn-cta-primary btn-download" href="https://themes.3rdwavemedia.com/bootstrap-templates/resume/free-bootstrap-theme-for-web-developers/" target="_blank"><i class="fas fa-download"></i> I want to download</a>
+                            <hr/>
+                            <h5 class="subheading pt-3">Want more free Bootstrap themes and templates?</h5>
+                            <p>Check out our <a href="https://themes.3rdwavemedia.com/bootstrap-templates/free/">collection of free themes and templates.</a></p>
+                            <p>Follow <a href="https://twitter.com/3rdwave_themes" target="_blank">Xiaoying</a> on twitter so you don't miss any future freebies!</p> 
+                            
+                            <a class="btn btn-cta-secondary btn-follow" href="https://twitter.com/3rdwave_themes" target="_blank"><i class="fab fa-twitter"></i> Follow on twitter</a>
+                            
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </aside><!--//section-->
+              
+            </div><!--//secondary-->    
+        </div><!--//row-->
+    </div><!--//masonry-->
+    
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <span class="sr-only">love</span><i class="fas fa-heart"></i> by <a href="https://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+ 
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/vanilla-rss/dist/rss.global.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/dark-mode-switch/dark-mode-switch.min.js"></script> 
+    <!-- github calendar plugin -->
+    <script type="text/javascript" src="assets/plugins/github-calendar/dist/github-calendar.min.js"></script>
+    <!-- github activity plugin -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="assets/js/main.js"></script>            
 </body>
+</html> 
+
